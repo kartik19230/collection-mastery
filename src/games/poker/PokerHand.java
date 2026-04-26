@@ -46,7 +46,7 @@ public class PokerHand {
             case 2 -> {
                 if (score == Ranking.NONE) score = Ranking.ONE_PAIR;
                 else if (score == Ranking.THREE_OF_A_KIND) score = Ranking.FULL_HOUSE;
-                else score = Ranking.TW0_PAIR;
+                else score = Ranking.TWO_PAIR;
             }
         }
     }
