@@ -1,8 +1,6 @@
-package src.com.collection;
+package src.com.set;
 
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 public class Contact {
@@ -47,7 +45,7 @@ public class Contact {
         return "%s: %s %s".formatted(name,emails,phones);
     }
 
-    public Contact mergeContactDate(Contact contact){
+    public Contact mergeContactData(Contact contact){
 
         Contact newContact = new Contact(name);
         newContact.emails = new HashSet<>(this.emails);
