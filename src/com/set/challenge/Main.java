@@ -6,6 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Task task1 = new Task("Design","Designing Web module","rock",Priority.MEDIUM);
+        Task task2 = new Task("Developing","Developing Web module","rock",Priority.LOW);
+
         Set<Task> tasks = TaskData.getTask("all");
         sortAndPrint("All tasks",tasks);
 
@@ -45,6 +48,8 @@ public class Main {
         Comparator<Task> priorityNatural = sortByPriority.thenComparing(
                 Comparator.naturalOrder());
         sortAndPrint("OverLapping",overlapping  ,priorityNatural);
+
+
     }
 
     private static void sortAndPrint(String header,Collection<Task> collection){
